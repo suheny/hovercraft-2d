@@ -10,6 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1993537476308391242}
   - component: {fileID: 1346475793642455430}
+  - component: {fileID: 6348930254419590767}
   - component: {fileID: 8855444983761053272}
   - component: {fileID: 464799367651481974}
   - component: {fileID: 3200869319757693724}
@@ -63,6 +64,20 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
+--- !u!114 &6348930254419590767
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2922685755030851658}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5b2e11891cac71a2aa00998d117dd48b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Tags
+  list:
+  - Car
 --- !u!114 &8855444983761053272
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -78,7 +93,7 @@ MonoBehaviour:
   <Acceleration>k__BackingField: 100
   <Deceleration>k__BackingField: 100
   <TurnIn>k__BackingField: 75
-  <TopSpeed>k__BackingField: 360
+  <TopSpeed>k__BackingField: 400
 --- !u!114 &464799367651481974
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -160,8 +175,30 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 2645793973579066590, guid: bf442fbc6349f49d78c6abe33b668bdd, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 3901139439719857009}
   m_SourcePrefab: {fileID: 100100000, guid: bf442fbc6349f49d78c6abe33b668bdd, type: 3}
+--- !u!1 &1874650618838369649 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2645793973579066590, guid: bf442fbc6349f49d78c6abe33b668bdd, type: 3}
+  m_PrefabInstance: {fileID: 4518138847277574575}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &3901139439719857009
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1874650618838369649}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5b2e11891cac71a2aa00998d117dd48b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Tags
+  list:
+  - Body
 --- !u!4 &4182452250293670466 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 340208132931648493, guid: bf442fbc6349f49d78c6abe33b668bdd, type: 3}
